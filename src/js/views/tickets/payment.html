@@ -54,7 +54,7 @@
       </div>
       <div class="col-sm-4">
         <div class="form-group" ng-class="{ 'has-feedback': payment.Form.exp_year.$dirty, 'has-success': (payment.Form.exp_year.$valid && payment.Form.exp_year.$dirty), 'has-error': (payment.Form.exp_year.$invalid && payment.Form.exp_year.$dirty) }">
-          <label class="control-label">Exipry Year</label>
+          <label class="control-label">Expiry Year</label>
           <input type="text" name="exp_year" class="form-control" ng-model="payment.card.exp_year" placeholder="2020" required ng-pattern="/20(1[6-9]|2[0-9])/">
           <span ng-if="(payment.Form.exp_year.$valid && payment.Form.exp_year.$dirty)" class="glyphicon glyphicon-ok form-control-feedback"></span>
           <span ng-if="(payment.Form.exp_year.$invalid && payment.Form.exp_year.$dirty)" class="glyphicon glyphicon-remove form-control-feedback"></span>
